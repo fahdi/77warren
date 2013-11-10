@@ -1,0 +1,549 @@
+/* General */
+
+body {
+  padding: 0;
+  margin:0;
+  font-family: 'DINNextLTPro-Medium';
+  color: #111;
+  background: url(../images/77warren_bg.jpg) no-repeat #cacbcc ;
+  background-position: 50% 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Some additional grids */
+
+.grid .one-tenth,     .grid .w-1-10 { width: 10%; }
+.grid .two-tenths,    .grid .w-2-10 { width: 20%; }
+.grid .three-tenths,  .grid .w-3-10 { width: 30%; }
+.grid .four-tenths,   .grid .w-3-10 { width: 40%; }
+.grid .six-tenths,    .grid .w-6-10 { width: 60%; }
+.grid .seven-tenths,  .grid .w-6-10 { width: 70%; }
+.grid .eight-tenths,  .grid .w-8-10 { width: 80%; }
+.grid .sixtyfive-percent,  .grid .w-65-100 { width: 65%; }
+.grid .twentyone-percent,  .grid .w-21-100 { width: 21%; }
+.grid .sixtytwo-percent,  .grid .w-62-100 { width: 62%; }
+
+
+
+/*Gridism Overrides*/
+
+.grid .unit:first-child {
+padding-left: 0;
+}
+
+.grid .unit:last-child {
+padding-right: 10px;
+}
+
+/* I use full-width horizontal sections a lot */
+body > header,
+body > section,
+body > footer {
+  display: block;
+  width: 100%;
+  clear: both;
+  float: left;
+
+}
+
+body > header{
+ margin-top: 102px;
+}
+body > header img{
+  padding: 0 9px 0 0;
+}
+body > header h2{
+  padding: 71px 0 0 0;
+  margin: 0 0 16px 0;
+}
+
+body > header em{
+ font-family: 'DINNextLTPro-Medium';
+ clear: both;
+ font-size: 1.3045em;
+ font-weight: normal;
+ letter-spacing: 0.009em;
+
+}
+.err{
+ font-family: 'DINNextLTPro-Medium';
+ font-weight: normal;
+ font-size: 100%;
+ letter-spacing: 0.02em;
+ height: 36px;
+ display: block;
+ visibility: hidden;
+}
+.boxed {
+  color: #fff;
+  width: 241px;
+  height: 145px;
+  text-align: center;
+  display: table;
+  margin: 0 auto;
+  position: relative;  
+}
+.boxed div {
+  display: table-cell;
+  vertical-align: middle;
+  top: 54px;
+  left: 50%;
+  background-color: #06070a;
+  line-height: 27px;
+  font-size: 100%;
+  font-size: 17px;
+}
+.optin_form{
+  padding:0;
+  margin: 0;
+}
+.optin_form label{
+  visibility: hidden; display:none;
+}
+
+.optin_form input[type="text"],input[type="email"] {
+  width: 218px;
+  height: 37px;
+  text-align:center;
+  border-radius: 0;
+  border-color: #ddd;
+  padding: 2px;
+  border-width: 1px;
+  border-style:none;
+  font-family: 'DINNextLTPro-Medium';
+  color: #06080a;
+}
+::-webkit-input-placeholder {
+ color: #06080a;
+ font-family: 'DINNextLTPro-Medium';
+}
+
+:-moz-placeholder { /* Firefox 18- */
+ color: #06080a;
+ font-family: 'DINNextLTPro-Medium';
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #06080a;
+  font-family: 'DINNextLTPro-Medium';
+}
+
+:-ms-input-placeholder {  
+  color: #06080a;
+  font-family: 'DINNextLTPro-Medium';
+}
+
+input[type="submit"]{
+  font-family: 'DINNextLTPro-Medium';
+  width: 174px;
+  height: 43px;
+  background-color: #06080a;
+  color: #fff;
+  border: none;
+  font-size: 17px;
+  font-weight:normal;
+}
+
+input:valid:not([type=submit]) {
+  border-color: #080;
+  background: #e6ffe6 url(../images/valid.png) no-repeat 97% center;
+}
+input:focus:invalid:not([type=submit]) {
+  border-color: #800;
+  background: #ffe6e6 url(../images/invalid.png) no-repeat 97% center;
+}
+
+
+h1, h2, h3, h4, h5 {
+ font-family: 'DINNextLTPro-Medium';
+ font-weight: 500;
+ letter-spacing: -0.04em;
+ font-style: inherit;
+ line-height: 81%;
+}
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+a {
+  color: #06070a;
+  text-decoration: none;
+}
+
+header, section {
+ /* border-bottom: 1px solid #eee;*/
+}
+
+section, footer {
+  padding: 30px 0;
+ 
+
+}
+
+header h1 a {
+  color: #06070a;
+  border-bottom: none;
+}
+
+header p {
+  margin: 2em 0;
+}
+
+.lead {
+  font-size: 1.5em;
+}
+
+p, pre {
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
+
+.button {
+  border-radius: 0;
+  background: #06070a;
+  padding: 8px 16px;
+  width: 223px;
+  height: 42px;
+  font-family: 'DINNextLTPro-Medium';
+  font-weight: 700;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-bottom: .5em;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+.legal-team {
+  font-size: 0.9em;
+  font-weight: 100%;
+  font-family: 'DINNextLTPro-Medium';
+  color: #06070a;
+}
+
+
+
+#team
+{
+  cursor: pointer;
+}
+
+.team {
+  font-family: 'DINNextLTPro-Medium';
+  font-size: 13px;
+  text-align: center;
+}
+.team #logo1{
+ font-size: 13px;
+ padding: 0 15px 0 0;
+ 
+
+}
+
+.team #logo2{
+ font-size: 13px;
+ text-align: center;
+ padding:0 0 0 20px;
+ 
+}
+.team img{
+  margin: -5px 0 0 0;
+  padding: 0;
+}
+
+#legal
+{
+  cursor: pointer;
+}
+
+.legal-text {
+  font-family: 'DINNextLTPro-Medium';
+  font-size: 9px;
+  text-align: justify;  
+}
+
+.legal-text span{
+  padding-top: 30px;
+}
+
+#logo1container{
+  padding-right:50px;
+}
+#logo2container{
+  padding-left:50px;
+}
+
+a{
+border: none;
+}
+
+span {
+ font-family: 'DINNextLTPro-Medium';
+
+}
+
+/*
+Don't display legal and team info; both until link clicked
+*/
+#team-info{
+	
+	display:none;
+}
+#legal-info {
+  
+	display:none;
+}
+
+/* an average desktop*/
+@media (min-width: 960px){
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 1.99em;
+    margin-top: 18px;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  .lead {
+    font-size: 1.8em;
+  }
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-width: 568px)
+{
+  /* Styles */
+  body {
+    background: url(../images/77warren_bg_small.jpg) no-repeat #d2d3d5 ;   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% auto;
+    background-position: center 10px;
+
+  }
+  body > header{
+   margin-top: 20px;
+
+  }
+  body > header .logo{
+    width:186px;
+    height: 268px;
+  }
+  .align-right, .align-left{
+    text-align:center; 
+    padding: 0;
+    margin: 0;
+  }
+  body > header h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding-top: 42px;
+    padding-bottom: 10px;
+  }
+body > header em {
+    font-size: 1em;
+    padding: 10px;
+}
+
+.grid .unit {
+  padding: 10px 0 0 0;
+  margin: 0;
+  text-align:center; 
+
+}
+.grid .unit:first-child {
+  padding-left: 0;
+}
+
+.grid .unit:last-child {
+  padding-right: 0;
+}
+
+
+.align-right, .align-left{
+  text-align:center; 
+  padding: 0;
+  margin: 0;
+
+}
+
+.grid .unit {
+  padding: 10px 0 0 0;
+  margin: 0;
+  text-align:center; 
+
+}
+.grid .unit:first-child {
+  padding-left: 0;
+}
+
+.grid .unit:last-child {
+  padding-right: 0;
+}
+
+/* for links below 'notify me'*/
+.legal-team {
+  font-size: 0.9em;
+  font-weight: 100%;
+  font-family: 'DINNextLTPro-Medium';
+  color: #06070a;
+}
+/* Show mouse pointer for the link*/
+#team
+{
+  cursor: pointer;
+}
+.team {
+  padding-top: 25px;
+  font-family: 'DINNextLTPro-Medium';
+  font-size: 13px;
+  text-align: center;
+}
+.team #logo1{
+ padding-top: 25px;
+ font-size: 13px;
+ padding: 0;
+}
+.team #logo2{
+ padding-top: 40px;
+ font-size: 13px;
+ text-align: center;
+ padding:0;
+ 
+}
+.team img{
+  margin: -5px 0 0 0;
+  padding: 0;
+}
+
+/* override for cell phones */ 
+#team-info{
+  padding-top: 40px;
+}
+
+#team-info #logo2container{
+  padding:0;
+  padding-top: 40px;
+}
+
+#logo1container{
+ padding:0;
+}
+
+
+/* legal info for cell phones*/
+#legal
+{
+  cursor: pointer;
+}
+
+#legal-info{
+  margin-top: 40px;
+  width: 218px;
+  text-align: justify;
+}
+
+.legal-text span {
+  padding-top: 30px;
+  text-align: justify;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /* Styles */
+ 
+}
+
+/*iPhone 2G-4S in landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) {
+ body {
+    background-position: center -90px;
+   }
+ /* STYLES GO HERE */}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+
+
+}
+
+/*Grid Styles*/
+
+header .unit{
+  text-align: center;
+}
+
+/* CSS slider*/
+
+.slider {
+  max-height: 500px;
+  height: auto; 
+}

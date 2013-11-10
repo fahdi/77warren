@@ -1,0 +1,27 @@
+/* @license
+ * MyFonts Webfont Build ID 2674656, 2013-10-25T17:02:24-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: DIN Next Pro Medium by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/din-next/pro-medium/
+ * Copyright: Copyright &#x00A9; 2010 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2674656
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("28cfe0");
+
+  
+@font-face {font-family: 'DINNextLTPro-Medium';src: url('28CFE0_0_0.eot');src: url('28CFE0_0_0.eot?#iefix') format('embedded-opentype'),url('28CFE0_0_0.woff') format('woff'),url('28CFE0_0_0.ttf') format('truetype');}
+ 
