@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<form method="get" action="http://www.mywebsite.com/jobs/">
+
+<input type="text" name="job_keyword" value="Keyword" onblur="if (this.value == '') {this.value = 'Keyword';}"
+
+ onfocus="if (this.value == 'Keyword') {this.value = '';}" />
+
+<select name="job_industry">
+
+<option>All</option>
+
+<option>Accountancy</option>
+
+<option>Banking</option>
+
+<option>Financial Services</option>
+
+</select>
+
+<div class="searchbutton"><button>Search jobs</button></div>
+
+</form>
+</body>
+</html>
