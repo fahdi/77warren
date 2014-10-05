@@ -4,48 +4,56 @@ module.exports = function(grunt) {
 	    concat: {
             css: {
                 src: [
-                    'css/gridism.css',
-					'css/normalize.css',
-					'css/style.css',
-					'css/font.css',
+                    'src/css/gridism.css',
+					'src/css/normalize.css',
+					'src/css/style.css',
+					'src/css/font.css',
                 ],
-                dest: 'css/combined.css'
+                dest: 'src/css/combined.css'
             },
             
              js1: {
                 src: [
-                    'shared/js/modernizr.com/Modernizr-2.5.3.forms.js',
-                    'shared/js/html5Forms.js',
+                    'src/shared/js/modernizr.com/Modernizr-2.5.3.forms.js',
+                    'src/shared/js/html5Forms.js',
                 ],
-                dest: 'js/combined.js'
+                dest: 'src/js/combined.js'
             },
 
             js2: {
                 src: [
-                    'js/jquery.min.js',
-                    'js/animate.js',
-                    'js/jquery.h5validate.js',
+                    'src/js/jquery.js',
+                    'src/js/animate.js',
+                    'src/js/jquery.h5validate.js',
 
                 ],
-                dest: 'js/combined_appendix.js'
+                dest: 'src/js/combined_appendix.js'
             }
         },
         cssmin: {
             css: {
-                src: 'css/combined.css',
-                dest: 'css/combined.min.css'
+                src: 'src/css/combined.css',
+                dest: 'dest/css/combined.min.css'
             }
         },
-       /* uglify: {
-            js: {
+       uglify: {
+            js1: {
                 files: {
-                    'js/combined.js': ['js/combined.min.js']
-                }
-            }
-        },*/
+                    'src/js/combined.js': ['dest/js/combined.js']
+                },
+            },
+            js2: {
+                files: {
+                    'src/js/combined_appendix.js': ['dest/js/combined_appendix.js']
+                }   
+            }    
+        },
         watch: {
-			files: ['css/*.*', 'js/*.js'],
-			tasks: ['concat', 'cssmin']
+			files: [ 'src/css/gridism.css','src/css/normalize.css','src/css/style.css','src/css/font.css','shared/js/modernizr.com/Modernizr-2.5.3.forms.js',
+                    'shared/js/html5Forms.js', 'js/jquery.min.js',
+                    'js/animate.js',
+                    'js/jquery.h5validate.js'],
+			tasks: ['concat', 'cssmin','uglify']
 	   }
 	});
 
