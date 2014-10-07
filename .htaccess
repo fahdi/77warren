@@ -11,6 +11,7 @@ AddOutputFilterByType DEFLATE image/svg+xml
 AddType image/svg+xml svg svgz
 AddEncoding gzip svgz
 AddOutputFilterByType DEFLATE image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+AddOutputFilter DEFLATE svg
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
