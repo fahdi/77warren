@@ -9,6 +9,8 @@ AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
 AddType image/svg+xml .svg
 AddOutputFilterByType DEFLATE image/svg+xml
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
 
 
 ## EXPIRES CACHING ##
