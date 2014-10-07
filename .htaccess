@@ -7,6 +7,9 @@ AddOutputFilterByType DEFLATE application/xhtml+xml
 AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-javascript
+AddType image/svg+xml .svg
+AddOutputFilterByType DEFLATE image/svg+xml
+
 
 ## EXPIRES CACHING ##
 <IfModule mod_expires.c>
