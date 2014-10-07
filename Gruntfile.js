@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                 ],
                 dest: 'src/js/combined_appendix.js'
             }
-        },
+                    },
         cssmin: {
             css: {
                 src: 'src/css/combined.css',
@@ -37,16 +37,14 @@ module.exports = function(grunt) {
             }
         },
        uglify: {
-            js1: {
+            dist: {
                 files: {
-                    'src/js/combined.js': ['dest/js/combined.js']
+                    'dest/js/combined.js': ['src/js/combined.js'],
+                    'dest/js/combined_appendix.js': ['src/js/combined_appendix.js'],
+                    //'src/shared/js/modernizr.com/Modernizr-2.5.3.forms.js','src/shared/js/html5Forms.js': 'dest/js/combined.js',
+                    //'src/js/jquery.js','src/js/animate.js','src/js/jquery.h5validate.js': 'dest/js/combined_appendix.js'
                 },
             },
-            js2: {
-                files: {
-                    'src/js/combined_appendix.js': ['dest/js/combined_appendix.js']
-                }   
-            }    
         },
         watch: {
 			files: [ 'src/css/gridism.css','src/css/normalize.css','src/css/style.css','src/css/font.css','shared/js/modernizr.com/Modernizr-2.5.3.forms.js',

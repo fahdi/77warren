@@ -620,7 +620,7 @@ body {
   margin:0;
   font-family: 'DINNextLTPro-Medium';
   color: #111;
-  background: url(../images/77warren_bg.jpg) no-repeat #cacbcc ;
+  background: url(../../images/77warren_bg.jpg) no-repeat #cacbcc ;
   background-position: 50% 0;
   width: 100%;
   text-align: center;
@@ -762,11 +762,11 @@ input[type="submit"]{
 
 input:valid:not([type=submit]) {
   border-color: #080;
-  background: #e6ffe6 url(../images/valid.png) no-repeat 97% center;
+  background: #e6ffe6 url(../../images/valid.png) no-repeat 97% center;
 }
 input:focus:invalid:not([type=submit]) {
   border-color: #800;
-  background: #ffe6e6 url(../images/invalid.png) no-repeat 97% center;
+  background: #ffe6e6 url(../../images/invalid.png) no-repeat 97% center;
 }
 
 
@@ -946,7 +946,7 @@ and (max-width: 568px)
 {
   /* Styles */
   body {
-    background: url(../images/77warren_bg_small.jpg) no-repeat #d2d3d5 ;   
+    background: url(../../images/77warren_bg_small.jpg) no-repeat #d2d3d5 ;   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
